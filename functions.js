@@ -1,9 +1,19 @@
-$( ".submit" ).click(function() {
-  const row = $(".canvasRow").val();
-  const column = $(".canvasColumn").val();
+$( ".submit" ).click(function(e) {
+  e.preventDefault();
+  let row = $(".canvasRow").val();
+  let column = $(".canvasColumn").val();
   makeGrid(row, column);
 });
 
-function makeGrid(row, column) {
-  alert( `Your row is ${row} and your column is ${column}` );
+function makeGrid(rows, cols){
+  $("#box").empty();
+	mytable = $('<table></table>').attr({ id: "canvas" });
+	let tr = [];
+	for (var i = 0; i < rows; i++) {
+		let row = $('<tr></tr>').attr({ class: ["cell"] }).appendTo(mytable);
+		for (let j = 0; j < cols; j++) {
+			$('<td></td>').attr({ class: ["cell"] }).appendTo(row);
+		}
+	}
+	mytable.appendTo("#box");
 }
