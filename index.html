@@ -18,21 +18,26 @@
   <div class="center">
     <h2>Choose Grid Size</h2>
     <form>
-      Grid Height: <input class="shadow" type="number" name="gridheight">
+      Grid Height: <input class="shadow canvasRow" type="number" name="gridheight">
       &nbsp;
-      Grid Width: <input class="shadow" type="number" name="gridwidth">
+      Grid Width: <input class="shadow canvasColumn" type="number" name="gridwidth">
       &nbsp;
       <input type="submit" class="submit shadow" value="SUBMIT">
     </form>
   </div>
 
   <div class="center">
-    <h2>Pick a Color</h2>
+    <h2>Pick Your Brush Color</h2>
     <input type="color" class="colorPicker shadow">
   </div>
 
   <div class="center">
     <h2>Design Your Canvas</h2>
+    <table id="canvas">
+      <tr>
+        <td></td>
+      </tr>
+    </table>
   </div>
 
   <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>

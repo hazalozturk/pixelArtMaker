@@ -22,3 +22,20 @@ input[type=number] {
   box-shadow: 5px 5px 2px #BCACA8;
   border-radius: 5px;
 }
+
+table, tr, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
