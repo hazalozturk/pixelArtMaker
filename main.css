@@ -1,0 +1,24 @@
+.mainHeading {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 400%;
+}
+
+h2 {
+  font-family: 'Lalezar', cursive;
+  font-size: 180%;
+  margin-top: 0.8em;
+  margin-bottom: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+input[type=number] {
+    width: 5em;
+}
+
+.shadow {
+  box-shadow: 5px 5px 2px #BCACA8;
+  border-radius: 5px;
+}
