@@ -5,8 +5,7 @@ $( ".submit" ).click(function(e) {
   makeGrid(row, column);
 });
 
-$(document).on("click", "#canvas", function(e) {
-  e.preventDefault();
+$(document).on("click", "#canvas .cell", function(e) {
   let color = $(".colorPicker").val();
   $(e.target).css('background-color', color);
 });
@@ -14,9 +13,8 @@ $(document).on("click", "#canvas", function(e) {
 function makeGrid(rows, cols){
   $("#box").empty();
 	mytable = $('<table></table>').attr({ id: "canvas" });
-	let tr = [];
-	for (var i = 0; i < rows; i++) {
-		let row = $('<tr></tr>').attr({ class: "cell" }).appendTo(mytable);
+	for (let i = 0; i < rows; i++) {
+		let row = $('<tr></tr>').appendTo(mytable);
 		for (let j = 0; j < cols; j++) {
 			$('<td></td>').attr({ class: "cell" }).appendTo(row);
 		}
